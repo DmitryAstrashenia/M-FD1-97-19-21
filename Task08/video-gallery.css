@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgrey;
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    max-width: 900px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+td {
+    display: inline-block;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 5px auto 10px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+tr {
+    text-align: center;
+}
+
+iframe {
+    width: 90%;
+    height: auto;
+}
+
+

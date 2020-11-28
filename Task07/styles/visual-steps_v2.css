@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.progress_bar {
+    display: block;
+    width: 500px;
+    margin: 100px auto 0;
+    
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    padding-left: 0;
+    
+}
+
+.progress_bar li {
+    list-style-type: none;
+    float: left;
+    width: 43px;
+    text-align: center;
+    padding: 11px 0;
+    font-size: 18px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    background-color: #bdde38;
+    position: relative;
+    margin-right:43px;
+    color: white;
+    
+}
+
+.progress_bar li.active {
+    color: white;
+    background: violet;
+    
+}
+
+.progress_bar li.not_active{
+    color: black;
+    background-color: lightgrey;
+    
+}
+
+
+.progress_bar li::before {
+    content: "";
+    height: 2px;
+    width: 43px;
+    background-color: lightgrey;
+    position: absolute;
+    left: 44px;
+    top: 50%;
+    
+}
+
+.progress_bar li:first-child {
+    margin-left: 51.5px;
+}
+
+.progress_bar li:last-child::before {
+    content: none;
+    
+}
+
+

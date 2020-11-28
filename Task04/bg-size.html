@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Масштабируемый фон</title>
+</head>
+<body>
+    <div style="background: url('https://drive.google.com/uc?export=view&id=1tGNjOKiSfT-IjkbBqioR3mIKWa64pLie') no-repeat; width: 40%; height: 300px; border: solid red 5px; background-size:auto">
+        <!--Фотография занимает весь блок, если размеров фотографии хватает. Если размеры фотографии меньше блока, то будет прижата к верхнему левому углу. Если размеры фотографии больше блока, то показывается только часть фотографии. auto значение по умолчанию. Если убрать background-size:auto, то ничего не изменится-->
+    </div>
+    <hr>
+    <div style="background: url('https://drive.google.com/uc?export=view&id=1tGNjOKiSfT-IjkbBqioR3mIKWa64pLie') no-repeat; width: 40%; height: 300px; border: solid red 5px; background-size:200px">
+        <!--Можно задать размеры. Если задать один размер, второй принимается за auto. Сохраняются пропорции фотограции. Единицы измерения могут быть разные-->
+    </div>
+    <hr>
+    <div style="background: url('https://drive.google.com/uc?export=view&id=1tGNjOKiSfT-IjkbBqioR3mIKWa64pLie') no-repeat; width: 40%; height: 300px; border: solid red 5px; background-size: cover">
+        <!--Масштабирует фотографию по высоте или ширине таким образом, что бы она заняла весь блок. При увеличении или уменьшении блока, видимая часть фотограции будет так же менять свои размеры пропорционально блоку. Лишнее обрезается-->
+    </div>
+    <hr>
+
+    <div style="background: url('https://drive.google.com/uc?export=view&id=1tGNjOKiSfT-IjkbBqioR3mIKWa64pLie') no-repeat; width: 40%; height: 300px; border: solid red 5px; background-size: contain">
+        <!--Масштабирует фотографию таким образом, что бы фотография полностью поместилась в блок с соблюдением пропорций. Если фото меньше блока, то остается незаполненная часть блока.-->
+    </div>
+</body>
+</html>

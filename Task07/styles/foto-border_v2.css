@@ -1,0 +1,7 @@
+.border {
+    margin: 5px auto;
+    width: 373px;
+    height: 356px;
+    border: 20px solid lightgreen;
+    box-shadow:  10px 10px green, 20px 20px darkgreen;
+}

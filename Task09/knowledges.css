@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h4 {
+    font-weight: normal;
+}
+
+p {
+    margin: 5px;
+    margin-left: 0;
+}
+
+.my_knowledge {
+    width: 600px;
+    margin: 200px auto;
+}
+
+.progress_bar {
+    height: 20px;
+    padding: 1px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.10) inset;
+}
+
+.progress_bar .indicator {
+    height: 100%;
+    width: 0%;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay:1s;
+    border-radius: 8px;
+
+}
+
+.html {
+    background-color: #ffb74b;
+    animation: progress_html;
+}
+
+.css {
+    background-color: #9574ce;
+    animation: progress_css;
+}
+
+.javascript {
+    background-color: #f0534f;
+    animation: progress_javascript;
+}
+
+.jquery {
+    background-color: #65bb69;
+    animation: progress_jquery;
+}
+
+@keyframes progress_html {
+    0% {width: 0%;}
+    100% {width: 75%; }
+}
+
+@keyframes progress_css {
+    0% {width: 0%;}
+    100% {width: 65%; }
+}
+
+@keyframes progress_javascript {
+    0% {width: 0%;}
+    100% {width: 55%; }
+}
+
+@keyframes progress_jquery {
+    0% {width: 0%;}
+    100% {width: 45%; }
+}

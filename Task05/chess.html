@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>css chess</title>
+  <style>
+    body {
+    background-color: cyan;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .chess {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid black;
+    margin: 0 auto 0;
+    background-color: white;
+    }
+
+    .chess td {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    font-weight: bold;
+   
+    
+    
+    }
+
+    table.chess tr td:first-child {
+    background-color: white;
+    width: 20px;
+    border-right: 2px solid black;
+    
+    }
+
+    table.chess tr td:last-child {
+    background-color: white;
+    width: 20px;
+    border-left: 2px solid black;
+    }
+
+    table.chess tr:first-child td {
+    background-color: white;
+    height: 20px;
+    border-bottom: 2px solid black;
+    }
+
+    table.chess tr:last-child td {
+    background-color: white;
+    height: 20px;
+    border-top: 2px solid black;
+
+    }
+
+    tr:nth-child(odd) td:nth-child(even) {
+    background-color: rgba(0,0,0,0.5);
+    
+    }
+
+    tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgba(0,0,0,0.5);;
+    }
+
+    table.chess tr td.not_line {
+        border: none;
+    }
+
+    .rook_black_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -96px 0;
+    }
+
+    .knight_black_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -192px 0;
+    }
+
+    .bishop_black_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -144px 0;
+    }
+
+    .queen_black {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -48px 0;
+
+    }
+
+    .king_black {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: 0 0;
+    }
+
+    
+    .bishop_black_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -144px 0;
+    }
+
+    .knight_black_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -192px 0;
+    }
+
+    .rook_black_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -96px 0;
+    }
+
+    .pawn_black_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px 0;
+    }
+
+    .pawn_black_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+     background-position: -240px 0;
+    }
+
+    .pawn_black_3 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');       background-position: -240px 0;
+    }
+
+    .pawn_black_4 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');       background-position: -240px 0;
+    }
+
+    .pawn_black_5 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q'); 
+    }
+
+    .pawn_black_6 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');       background-position: -240px 0;
+    }
+
+    .pawn_black_7 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');       background-position: -240px 0;
+    }
+
+    .pawn_black_8 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');       background-position: -240px 0;
+    }
+
+
+
+    .rook_white_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -96px -48px;
+    }
+
+    .knight_white_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -192px -48px;
+    }
+
+    .bishop_white_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -144px -48px;
+    }
+
+    .queen_white {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -48px -48px;
+    }
+
+    .king_white {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: 0 -48px;
+    }
+
+    .bishop_white_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -144px -48px;
+    }
+
+    .knight_white_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -192px -48px;
+    }
+
+    .rook_white_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');        background-position: -96px -48px;
+    }
+
+    .pawn_white_1 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_2 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_3 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_4 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_5 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_6 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_7 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+    .pawn_white_8 {
+        background: url('https://drive.google.com/uc?export=view&id=1OgWIW8gWekbdZFSDspTrvmHPNKGL077q');
+        background-position: -240px -48px;
+    }
+
+</style>
+</head>
+
+<body>
+    <h1>Шахматы</h1>
+  <table class="chess">
+  <tr>
+    <td class="not_line"></td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td class="not_line"></td>
+  </tr>
+  <tr>
+    <td>8</td><td class="rook_black_1"></td><td class="knight_black_1"></td><td class="bishop_black_1"></td><td class="queen_black"></td><td class="king_black"></td><td class="bishop_black_2"></td><td class="knight_black_2"></td><td class="rook_black_2"></td><td>8</td>
+  </tr>
+  <tr>
+    <td>7</td><td class="pawn_black_1"></td><td class="pawn_black_2"></td><td class="pawn_black_3"></td><td class="pawn_black_4"></td><td class="pawn_black_5"></td><td class="pawn_black_6"></td><td class="pawn_black_7"></td><td class="pawn_black_8"></td><td>7</td>
+  </tr>
+  <tr>
+    <td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>6</td>
+  </tr>
+  <tr>
+    <td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>5</td>
+  </tr>
+  <tr>
+    <td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td>
+  </tr>
+  <tr>
+    <td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3</td>
+  </tr>
+  <tr>
+    <td>2</td><td class="pawn_white_1"></td><td class="pawn_white_2"></td><td class="pawn_white_3"></td><td class="pawn_white_4"></td><td class="pawn_white_5"></td><td class="pawn_white_6"></td><td class="pawn_white_7"></td><td class="pawn_white_8"></td><td>2</td>
+  </tr>
+  <tr>
+    <td>1</td><td class="rook_white_1"></td><td class="knight_white_1"></td><td class="bishop_white_1"></td><td class="queen_white"></td><td class="king_white"></td><td class="bishop_white_2"></td><td class="knight_white_2"></td><td class="rook_white_2"></td><td>1</td>
+  </tr>
+  <tr>
+    <td class="not_line"></td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td class="not_line"></td>
+  </tr>
+  </table>
+
+</body>
+</html>

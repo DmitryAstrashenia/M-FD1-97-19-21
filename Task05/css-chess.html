@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>css chess</title>
+  <style>
+
+  .chess {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .chess td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+  }
+
+  table.chess tr td:first-child {
+    background-color: #90ee90;
+    width: 20px;
+   
+  }
+
+  table.chess tr td:last-child {
+    background-color: #90ee90;
+    width: 20px;
+  }
+
+  table.chess tr:first-child td {
+    background-color: #90ee90;
+    height: 20px;
+  }
+
+  table.chess tr:last-child td {
+    background-color: #90ee90;
+    height: 20px;
+  }
+
+  tr:nth-child(odd) td:nth-child(even) {
+      background-color: black;
+  }
+
+  tr:nth-child(even) td:nth-child(odd) {
+      background-color: black;
+  }
+
+  
+
+ 
+
+</style>
+</head>
+<body>
+  <table class="chess">
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  </table>
+
+</body>
+</html>

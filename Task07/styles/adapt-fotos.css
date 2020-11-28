@@ -1,0 +1,55 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.gallery {
+    text-align: center;
+    max-width: 1200px;
+    min-width: 300px;
+    width: 100%;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+.photo {
+    width: 33.333333%;
+    height: auto;
+    float: left;
+    padding: 10px 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.gallery:after {
+    clear: both;
+}
+
+@media (max-width:980px) {
+   .img {
+    width: none;
+    
+    }
+    .photo {
+    padding: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .photo {
+        width: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .photo {
+        float: none;
+        width: 100%;
+        min-width: 250px;
+    }
+}

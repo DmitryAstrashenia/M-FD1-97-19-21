@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Слайдер</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .heading {
+            text-align: center;
+            width: 1200px;
+            margin: 20px auto;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .slider {
+            position: relative;
+            width: 1200px;
+            height: 425px;
+        }
+
+        .slide {
+            position: absolute;
+        }
+
+        .slider > .slide:first-child {
+	        opacity: 1;
+}
+
+        
+
+        .slider-background {
+            display: block;
+        }
+
+        .slide__content {
+            position: absolute;
+            color: white;
+            top: 130px;
+            left: 313.24px;
+        }
+
+        .slide h3 {
+            font-size: 50px;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            margin: 0 0 10px;
+        }
+
+        .slide p {
+            font-size: 30px;
+            margin: 0;
+            text-align: center;
+            
+        }
+
+        .slider_nav {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .slider_nav  ul {
+            padding: 0;
+        }
+
+        .slider_nav li {
+            display: inline-block;
+            margin: 0 5px;
+
+        }
+
+        .slider_nav a {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            display: block;
+        }
+
+        .slider_nav a:hover {
+            background-color: #FF6600;
+        }
+
+        .slider_nav a:focus {
+            background-color: #FF6600;
+        }
+
+    
+        
+    </style>
+</head>
+
+<body>
+    <h2 class="heading">Верстка заготовки для слайдера</h2>
+    <div class="container">
+        <div class="slider">
+
+            <div class="slide" id="slide_1">
+                <img src="https://drive.google.com/uc?export=view&id=1oUAvCPWJsVsy2DSK-fa89Hn2urmw5DxZ"
+                    alt="slider-background" class="slider-background">
+                <div class="slide__content">
+                    <h3>КОМФОРТНАЯ ОДЕЖДА</h3>
+                    <p>для всех видов спорта</p>
+                    <p>Картинка №1</p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide_2">
+                <img src="https://drive.google.com/uc?export=view&id=1oUAvCPWJsVsy2DSK-fa89Hn2urmw5DxZ"
+                    alt="slider-background">
+                <div class="slide__content">
+                    <h3>КОМФОРТНАЯ ОДЕЖДА</h3>
+                    <p>для всех видов спорта</p>
+                    <p>Картинка №2</p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide_3">
+                <img src="https://drive.google.com/uc?export=view&id=1oUAvCPWJsVsy2DSK-fa89Hn2urmw5DxZ"
+                    alt="slider-background">
+                <div class="slide__content">
+                    <h3>КОМФОРТНАЯ ОДЕЖДА</h3>
+                    <p>для всех видов спорта</p>
+                    <p>Картинка №3</p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide_4">
+                <img src="https://drive.google.com/uc?export=view&id=1oUAvCPWJsVsy2DSK-fa89Hn2urmw5DxZ"
+                    alt="slider-background">
+                <div class="slide__content">
+                    <h3>КОМФОРТНАЯ ОДЕЖДА</h3>
+                    <p>для всех видов спорта</p>
+                    <p>Картинка №4</p>
+                </div>
+            </div>
+            <div class="slider_nav">
+                <ul>
+                    <li><a href="#slide_1"></a></li>
+                    <li><a href="#slide_2"></a></li>
+                    <li><a href="#slide_3"></a></li>
+                    <li><a href="#slide_4"></a></li>
+                </ul>
+            </div>
+
+            <div class="slider_button">
+                <a href="#" class="slider__left"><span class="slider__arrow_left"></span></a>
+                <a href="#" class="slider__right"><span class="slider__arrow_right"></span></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

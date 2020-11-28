@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .slider {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+    }
+
+    .slider > .slide:first-child {
+	    opacity: 1;
+    }
+
+    .content {
+      width: 500px;
+      height: 500px;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      position: absolute;
+    }
+
+    .div_red {
+      background-color: red;
+    }
+
+    .div_black {
+      background-color: black;
+
+    }
+
+    .div_green {
+      background-color: green;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="slider">
+      <div class="content div_red" id="slider_red"><p>1</p>
+      </div>
+      <div class="content div_black" id="slider_black"><p>2</p>
+      </div>
+      <div class="content div_green" id="slider_green"><p>3</p>
+      </div>
+
+      <div >
+        <ul>
+          <li><a href="#slider_red">красный</a></li>
+          <li><a href="#slider_black">черный</a></li>
+          <li><a href="#slider_green">зеленый</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="slider_navigator">
+      <ul>
+        <li><a href="#slider_red">красный</a></li>
+        <li><a href="#slider_black">черный</a></li>
+        <li><a href="#slider_green">зеленый</a></li>
+      </ul>
+    </div>
+
+
+
+</body>
+
+</html>

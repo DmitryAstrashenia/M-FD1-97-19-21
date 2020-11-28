@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.progress_bar {
+    display: block;
+    margin: 100px auto 0;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.progress_bar li {
+    display: inline-block;
+    width: 43px;
+    padding: 11px 0;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    margin:0 19.5px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    background-color: #bdde38;
+    text-align: center;
+}
+
+
+.progress_bar li.active {
+    background: violet;
+    color: white;
+}
+
+.progress_bar li.not_active{
+    background: lightgrey;
+    color: black;
+}
+
+
+.progress_bar li::before {
+    content: "";
+    width: 43px;
+    height: 2px;
+    background-color: lightgrey;
+    left: 44px;
+    top:50%;
+    position: absolute;
+    display: block;
+}
+
+.progress_bar li:last-child::before {
+    content: none;
+}
+
+
+
+
+
+

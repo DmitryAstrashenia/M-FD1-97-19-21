@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 600px;
+    height: 600px;
+    margin: 200px auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+}
+
+.block_1 {
+    border: 2px solid green;
+    animation: 6s start infinite;
+    position: absolute;
+}
+
+.block_2 {
+    background: orangered;
+    border-radius:50%;
+    position: absolute;
+    top: 80px;
+    
+}
+
+.block_3 {
+    background-color: royalblue;
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    
+}
+
+.block_4 {
+    width: 100px;
+    background-color: seagreen;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.block_5 {
+    background-color: turquoise;
+    border: 5px solid black;
+    box-sizing: border-box;
+    position: absolute;
+    top:480px;
+    left: 100px;
+    box-sizing: border-box;
+}
+/*____________1____________*/
+@keyframes start {
+    0% {left: 0;}
+    25%{background-color: yellow;}
+    50%{left: 520px}
+    75%{background-color: teal;}
+    100% {left: 0;}
+}
+/*____________1____________*/
+
+
+/*____________2___________*/
+@keyframes harlem_shake_2 {
+    0% {top:0; left: 0;}
+    9%{top:520px; left: 0;}
+    18%{top:520px; left: 100px;}
+    27%{top:0; left: 100px;}
+    36%{top:0; left: 200px;}
+    45%{top:520px; left: 200px;}
+    54%{top:520px; left: 300px;}
+    63%{top:0; left: 300px;}
+    72%{top:0; left: 400px;}
+    81%{top:520px; left: 400px;}
+    90%{top:520px; left: 500px;}
+    95%{top:0; left: 520px;}
+    100%{top:520px; left: 520px;}
+} 
+
+.main:hover .block_2 {
+    animation: 20s harlem_shake_2 infinite;
+}
+/*____________2___________*/
+
+/*____________3___________*/
+@keyframes harlem_shake_3 {
+    0% {transform: rotate(0);}
+    50%{transform: rotate(45deg);}
+    100% {transform: rotate(90deg);}
+} 
+
+.main:hover .block_3 {
+    animation: 2s harlem_shake_3 infinite;
+}
+/*____________3___________*/
+
+/*____________4___________*/
+@keyframes harlem_shake_4 {
+    0% {top:300px; left: 520px;}
+    5%{width:80px;}
+    10%{width: 60px;}
+    25% {top:300px; left: 300px;}
+    50% {top:300px; left: 0; opacity: 0;}
+    75%{border-radius: 50%;}
+    100%{top:300px; left: 300px;}
+} 
+
+.main:hover .block_4 {
+    animation: 15s harlem_shake_4 infinite;
+}
+/*____________4___________*/
+
+/*____________5___________*/
+@keyframes harlem_shake_5 {
+    
+    50% { transform: scale(1.6); border: 4px solid turquoise; background-color: black;}
+    
+} 
+
+.main:hover .block_5 {
+    animation: 5s harlem_shake_5 infinite;
+}
+/*____________5___________*/
+
+
+.main:hover {
+    animation: 10s harlem_shake infinite linear;
+}
+
+
+@keyframes harlem_shake {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}  

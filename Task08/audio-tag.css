@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: lightgrey;
+    padding: 5px 15px 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+img {
+    width: 30%;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.none {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.none li {
+    margin-bottom: 8px;
+}
+
+.music {
+    width: 900px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.all {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: orangered;
+    list-style-type: none;
+}
+
+.all a {
+    text-decoration: none;
+}
+
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+
+}

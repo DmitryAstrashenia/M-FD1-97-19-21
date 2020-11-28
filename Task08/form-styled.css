@@ -1,0 +1,143 @@
+body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    
+    }
+
+.feedback {
+    margin: 0 auto;
+    max-width: 485px;
+    min-width: 360px;
+    border: 2px solid #7099f8;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.feedback h4 {
+    text-align: center;
+    background-color:#7099f8;
+    padding: 20px 0;
+    margin-top: 0;
+    position: relative;
+    color: white;
+    font-size: 26px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+.feedback h4::before {
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free"; 
+    content: "\f015";
+    margin: 0 5px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.feedback-group {
+    margin: 20px auto;
+    max-width: 445px;
+    padding: 0 5px;
+}
+
+.feedback-label span {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #615b55;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.feedback-input {
+    width: 100%;
+    padding: 7px 0 6px 32px;
+    box-sizing: border-box;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: block;
+}
+
+.feedback-input:focus {
+    border: 1px solid #7099f8;
+}
+
+.feedback-label {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 20px ;
+    
+}
+
+.feedback-label i {
+    position: absolute;
+    left: 12px;
+    top: 28px;
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.feedback-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding-left: 30px;
+    padding-top: 7px;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    resize:vertical;
+    box-sizing: border-box;
+}
+
+.feedback-textarea:focus {
+    border: 1px solid #7099f8;
+}
+
+.feedback-button {
+    display: block;
+    padding: 7px 0;
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color:#7099f8;
+    border: 1px solid #7099f8;
+    color: white;
+}
+
+
+
+/*вертикаль --> .horizontal*/
+
+.feedback.horizontal .feedback-label span {
+    width: 20%;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.feedback.horizontal .feedback-input {
+    width: 60%;
+    display: inline-block;
+}
+
+.feedback.horizontal .feedback-label i {
+    left: 24%;
+    top: 20%;
+}
+
+.feedback.horizontal .feedback-label .fa-pen-alt {
+    left: 10px;
+    top: 26px;
+}
+
+
+
+
+
+

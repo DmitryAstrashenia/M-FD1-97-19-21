@@ -1,0 +1,37 @@
+.border {
+    margin: 0 auto;
+    width: 373px;
+    height: 356px;
+    border: 20px solid lightgreen;
+    position: relative;
+}
+
+
+.border::after {
+    content: '';
+    width: 403px;
+    height: 386px;
+    border-right: 10px solid green;
+    border-bottom: 10px solid green;
+    position: absolute;
+    left: -10px;
+    bottom: -30px;
+}
+
+.border::before {
+    content: '';
+    width: 403px;
+    height: 386px;
+    border-right: 10px solid darkgreen;
+    border-bottom: 10px solid darkgreen;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+}
+
+
+
+
+
+
+

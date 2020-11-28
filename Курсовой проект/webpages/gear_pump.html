@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="..//styles/styles.css">
+    <link rel="stylesheet" href="..//webfonts/roboto.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="..//styles/all.min.css">
+    <link rel="stylesheet" type="text/css" href="..//styles/slick.css" />
+    <link rel="stylesheet" type="text/css" href="..//styles/slick-theme.css" />
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">-->
+    <title>OOО &quot;БПИ&quot; гидравлическое оборудование - поставки, cервис, ремонт в Беларуси</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_slider">
+            <div class="slider">
+                <div><img src="..//img/header_slider/hydraulic-power-pack-slide_1200_300_80.jpg" alt="slider_power-pack">
+                </div>
+                <div><img src="..//img/header_slider/hydraulic-accumulators-slide_1200_300_80.jpg" alt="slider_accumulators"></div>
+                <div><img src="..//img/header_slider/hydraulic-hose-slide_1200_300_80.jpg" alt="slider_hose">
+                </div>
+            </div>
+
+            <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="..//js/slick.min.js"></script>
+            <script>
+                $('.slider').slick({
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    infinite: true,
+                    fade: true,
+                });
+            </script>
+        </div>
+
+        <div class="header_left_section">
+
+            <div class="header_logo">
+                <h1><a href="..//index.html">БПИ</a></h1>
+            </div>
+
+            <div class="header__activity_company">
+                <h3>Промышленная гидравлика</h3>
+                <p>Инжиниринг, сервис, продажи</p>
+            </div>
+
+            <div class="header__working_hours">
+                <p><strong>Время работы:</strong></p>
+                <p>8 <sup>00</sup>&ndash;16 <sup>45</sup> </p>
+                <p>Суббота, воскресенье: выходной</p>
+            </div>
+
+            <div class="header__address_company">
+                <p>г. Минск, ул. Бехтерева, 5</p>
+
+                <p><a href="tel:+375172222222">+375 17 <strong>222-22-22</strong>
+                        <img src="..//img/index/t-gor.png" alt="t-gor"></a>
+                </p>
+
+                <p><a href="tel:+375297777777">+375 29 <strong>777-77-77</strong>
+                        <img src="..//img/index/t-mts2.png" alt="t-mts"></a>
+                </p>
+
+                <p><a href="tel:+375446666666">+375 44 <strong>666-66-66</strong>
+                        <img src="..//img/index/t-vel2.png" alt="t-vel"></a>
+                </p>
+                <p><strong><a href="mailto:hydro@bpi.by" style="color:black">hydro@bpi.by</a></strong>
+                    <img src="..//img/index/email.png" alt="email">
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!--nav-hor-->
+    <nav class="nav-hor_v2" id="nav">
+        <a href="..//..//index.html" class="activ">На главную</a>
+        <a href="about.html">О компании</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="suppliers.html">Поставщики</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+
+        <script>
+            function myFunction() {
+                let x = document.getElementById("nav");
+                if (x.className === "nav-hor_v2") {
+                    x.className += " open";
+                } else {
+                    x.className = "nav-hor_v2";
+                }
+            }
+        </script>
+
+        <script>
+            $(document).scroll(function() {
+                if ($(document).width() > 723) {
+                    if ($(document).scrollTop() > $("header").height() + 10) {
+                        $("#nav").addClass("fixed");
+                    } else {
+                        $("#nav").removeClass("fixed");
+                    }
+                }
+            });
+        </script>
+
+    </nav>
+    <!--/nav-hor-->
+
+    <!--middle-->
+    <div class="middle">
+
+        <div class="left_sidebar left_sidebar_v2">
+            <div class="engineering">
+                <h3>Инжиниринг</h3>
+                <ul>
+                    <li><a href="engineering_hydraulic_systems.html">Проектирование гидросистем</a></li>
+                    <li><a href="engineering_power_pack.html">Проектирование гидростанций</a></li>
+                    <li><a href="production_power_pack.html">Производство гидростанций</a></li>
+                </ul>
+            </div>
+            <div class="hydraulics_service">
+                <h3>Сервис гидравлики</h3>
+                <ul>
+                    <li><a href="hydraulics_diagnostics.html">Диагностика и ремонт</a></li>
+                    <li><a href="service_center.html">Сервисный центр</a></li>
+                    <li><a href="hydrofication.html">Гидрофикация</a></li>
+                </ul>
+            </div>
+
+            <div class="sale">
+                <h3>Продажа</h3>
+                <ul>
+                    <li><a href="pump_motor.html" class="active">Гидронасосы, гидромоторы</a></li>
+                    <li><a href="valve.html">Гидроклапаны</a></li>
+                    <li><a href="directional_valve.html">Гидрораспределители</a></li>
+                    <li><a href="hydraulics_accessories.html">Аксессуары для гидравлики</a></li>
+                    <li><a href="accumulator.html">Гидроаккумуляторы</a></li>
+                    <li><a href="radiators.html">Теплообменники</a></li>
+                    <li><a href="filters.html">Фильтры</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content content_v2 gear_pump">
+            <h2>Шестеренный насос</h2>
+            <div class="wrapper_preview">
+                <a href="gear_pump_hydra_pack.html" class="preview"><img src="..//img/gear_pump/gear_pump_Hydra_pack.png" alt="Hydra_Pack">
+                    <span class="info">Hydra_Pack</span></a>
+                <a href="#" class="preview"><img src="..//img/gear_pump/gear_pump_Vivoil.png" alt="Vivoil">
+                    <span class="info">Vivoil</span></a>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <!--/middle-->
+
+    <footer>
+        <p>2019 &copy; ОOО &laquo;БПИ&raquo;</p>
+    </footer>
+</body>
+
+</html>

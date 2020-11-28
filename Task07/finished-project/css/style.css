@@ -1,0 +1,259 @@
+/*
+* Background Images - Practice
+* CSS Styles
+* http://www.idg.net.ua/blog/uchebnik-css/ispolzovanie-css/praktika-background
+*
+*/
+
+
+/* General */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #eee;
+    background-color: #383838;
+    background-image: url(../img/bg.png);
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.button,
+button {
+    border: 0;
+    background-image: linear-gradient(145deg, #dd0000, #ff3670);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.button:hover,
+button:hover {
+    background-image: linear-gradient(145deg, #ff3670, #dd0000);
+}
+
+/* Header */
+
+#topbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+.menu li a {
+    padding: 20px;
+    display: block;
+}
+.menu li a:hover {
+    background-color: rgba(243, 36, 74, 0.7);
+}
+header {
+    background: url(../img/bg-01.jpg) center / cover no-repeat #666;
+    min-height: 280px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+header h1 {
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    font-size: 5.6em;
+    color: #fafafa;
+    margin-top: 0;
+}
+header .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Tour */
+
+.tour-card {
+    width: 220px;
+    height: 240px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+    box-sizing: border-box;
+    padding: 40px 10px 20px;
+    box-shadow: 0px 3px 3px 0px #212121;
+    background-blend-mode: multiply;
+}
+#tour:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.tour-town {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.tour-place {
+    margin-bottom: 10px;
+}
+.tour-date {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.tour-card .button {
+    padding: 10px;
+    display: block;
+    max-width: 140px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tour-card.madrid {
+    background: url(../img/tour/madrid.jpg) center / cover no-repeat #666;
+}
+.tour-card.turin {
+    background: url(../img/tour/turin.jpg) center / cover no-repeat #666;
+}
+.tour-card.hamburg {
+    background: url(../img/tour/hamburg.jpg) center / cover no-repeat #666;
+}
+.tour-card.krakow {
+    background: url(../img/tour/krakow.jpg) center / cover no-repeat #666;
+}
+
+
+/* Gallery */
+
+#gallery .photo {
+    width: 33.333333%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#gallery .photo:hover {
+    opacity: 0.6;
+}
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+#gallery .photo img {
+    box-shadow: 0px 3px 3px 0px #212121;
+}
+
+/* Subscribe */
+
+#subscribe {
+    background: url(../img/bg-02.jpg) center / cover no-repeat #666;
+    background-blend-mode: multiply;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+#subscribe .pitch {
+    margin-bottom: 20px;
+}
+#subscribe .pitch p {
+    line-height: 1.6;
+}
+#subscribe input {
+    border: 0;
+    height: 40px;
+    background-color: #fafafa;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+#subscribe button {
+    margin: 0;
+    height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #222;
+    background-image: url(../img/bg.png);
+    text-align: center;
+}
+footer .social {
+    margin-bottom: 20px;
+}
+footer .social a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+footer .social a:hover {
+    color: rgba(243, 36, 74, 0.7);
+}
+footer .copyright {
+    font-size: 0.8em;
+}
+
+
+
+@media (max-width: 980px) {
+    .tour-card {
+        float: none;
+        display: inline-block;
+    }
+    #tour {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .menu li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .menu {
+        text-align: center;
+    }
+    #subscribe button {
+        width: 232px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+
+<body>
+    <script>
+         i = 0;
+         y = x = "|_";
+        while (i < 9) {
+            console.log(x + '\n');
+            x = x + y;
+            i++;
+        }
+    </script>
+
+    <script>
+         y = "";
+        for (i = 0; i < 8; i++) {
+            for (j = 0; j < 8; j++) {
+                if ((i + j) % 2 === 0) {
+                    y += "\u2B1C";
+                } else {
+                    y += "\u2B1B";
+                }
+            }
+            y += "\n"
+        }
+        console.log(y);
+    </script>
+
+    <script>
+        y = "";
+        for (i = 0; i < 8; i++) {
+            for (j = 0; j < 8; j++) {
+                ((i + j) % 2 === 0) ? y += "\u2B1C": y += "\u2B1B";
+
+            }
+            y += "\n"
+        }
+        console.log(y);
+    </script>
+</body>
+
+</html>
